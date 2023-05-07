@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.a11e3109.css">
+    <meta name="Access-Control-Allow-Origin" content="*">
+    <!-- 允许跨域的 HTTP 方法 -->
+    <meta name="Access-Control-Allow-Methods" content="GET, POST, OPTIONS">
+    <!-- 允许跨域请求包含以下头信息 -->
+    <meta name="Access-Control-Allow-Headers" content="X-Requested-With,content-type">
+<script src="/style.a11e3109.js"></script></head>
+<body>
+    <a target="_blank"><h1>test1</h1></a>
+    <!--<video src="./test1.mp4" id="video1"></video>-->
+    <!--<video id="video" loop muted="muted" crossorigin="anonymous" playsinline style="display:none">
+        <source src="https://threejs.org/examples/textures/pano.mp4">
+        <source src="https://threejs.org/examples/textures/sintel.ogv">
+        <source src="https://threejs.org/examples/textures/sintel.mp4" [ type="video/ogg; codecs="theora, vorbis""]type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
+    </video> -->
+    <script type="importmap">
+    {
+		"imports": {
+			"three": "../node_modules/three/build/three.module.js"
+		}
+	}
+    </script>
+    <script src="/main.0632549a.js" type="module">  </script>
+    
+    <!--<script type="module" > 
+        import * as THREE from 'three';
+        //import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
+        var scene,camera,renderer;
+
+
+        init();
+        init_controls();
+        test1_addcude();
+        render();
+
+
+        function test1_addcude() {
+            var geometry = new THREE.BoxGeometry(1, 1, 1);
+            var material = new THREE.MeshBasicMaterial({
+                color: 0x00ff00
+            });
+            var cube = new THREE.Mesh(geometry, material);
+            scene.add(cube);
+        };
+        function test2_addcude() {
+            var geometry = new THREE.BoxGeometry(1, 1, 1);
+            var material = new THREE.MeshPhongMaterial({
+                color: 0x00ff00
+            });
+            var cube = new THREE.Mesh(geometry, material);
+            scene.add(cube);
+        };
+
+
+
+        function init_camera() {
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.x = 2;
+            camera.position.y = 2;
+            camera.position.z = 2;
+            camera.lookAt(scene.position);
+        };
+        function init_renderer() {
+            renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+        };
+        function init_light() {
+            var ambient = new THREE.AmbientLight(0x404040);
+            scene.add(ambient);
+
+            var spotLight = new THREE.SpotLight(0xffffff);
+            spotLight.position.set(10, 10, 15);
+            spotLight.castShadow = true;
+            //spotLight.shadowCameraNear = 8;
+            //spotLight.shadowCameraFar = 30;
+            spotLight.shadowDarkness = 0.5;
+            spotLight.shadowCameraVisible = false;
+            //shadow map size will determine the resolution of shadow
+            //spotLight.shadowMapWidth = 1024;
+            //spotLight.shadowMapHeight = 1024;
+            spotLight.name = 'Spot Light';
+            scene.add(spotLight);
+        };
+        function init_controls() {
+            //var controls = new OrbitControls(camera,renderer.domElement);
+        }
+        function init() {
+            scene = new THREE.Scene();
+            init_camera();
+            init_renderer();
+            init_light();
+        }
+        function render() {
+            requestAnimationFrame(render);
+            renderer.render(scene, camera);
+        };
+    </script>-->
+</body>
+</html>

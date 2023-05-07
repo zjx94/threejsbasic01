@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>three.js webgl - equirectangular video panorama</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link  rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        body {
+            touch-action: none;
+        }
+    </style>
+
+</head>
+<body mpa-version="8.0.17" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg">
+    <div id="info">
+        <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - video panorama
+    </div>
+
+    <div id="container"><canvas data-engine="three.js r151" width="1417" height="276" style="display: block; width: 1417px; height: 276px;"></canvas></div>
+
+    <video id="video" loop="" muted="" crossorigin="anonymous" playsinline="" style="display:none">
+        
+        <source src="https://threejs.org/examples/textures/pano.mp4">
+    </video>
+
+    <!-- Import maps polyfill -->
+    <!-- Remove this when import maps will be widely supported -->
+    
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "../build/three.module.js",
+                "three/addons/": "./jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="main/test1.js">
+
+
+    </script>
+
+<!--
+<div class="mpa-sc mpa-plugin-image-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-image-gatherer"></div>
+<div class="mpa-sc mpa-plugin-text-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-text-gatherer"></div>
+<div class="mpa-sc mpa-plugin-video-gatherer mpa-new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-video-gatherer"></div>-->
+</body></html>
